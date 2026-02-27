@@ -1,0 +1,52 @@
+<section class="hero-section">
+    <div class="container">
+        <div class="hero-content">
+            <h1>Monetizálja tudását saját <span class="highlight">emelt díjas számmal</span></h1>
+            <p class="hero-lead">Profi Audiotex és Audiofix megoldások szakértőknek, tanácsadóknak és tartalomkészítőknek. Aktiválás akár 3 napon belül, rejtett költségek nélkül.</p>
+            
+            <div class="cta-group">
+                <a href="#ajanlatkeres" class="btn btn-primary">Ingyenes ajánlatot kérek</a>
+                <a href="tel:+36XXXXXXXX" class="btn btn-secondary">Azonnali konzultáció</a>
+            </div>
+
+            <ul class="trust-indicators">
+                <li><img src="check.svg" alt="pipa"> Valós idejű forgalmi statisztika</li>
+                <li><img src="check.svg" alt="pipa"> Heti vagy havi kifizetés</li>
+                <li><img src="check.svg" alt="pipa"> Teljes jogi megfelelőség (NMHH)</li>
+            </ul>
+        </div>
+        
+        <div class="hero-calculator">
+            <h3>Profit kalkulátor</h3>
+            <label>Havi várható híváspercek:</label>
+            <input type="range" min="100" max="10000" value="1000" id="minutesRange">
+            <p><span id="minutesDisplay">1000</span> perc / hó</p>
+            <div class="result-box">
+                <span>Várható havi bevétel:</span>
+                <strong id="profitResult">Számítás...</strong>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    :root { --primary: #0056b3; --secondary: #28a745; --dark: #1a1a1a; --light: #f8f9fa; }
+    .hero-section { padding: 80px 0; background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); font-family: sans-serif; }
+    .container { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 40px; }
+    .hero-content { flex: 1; }
+    .hero-content h1 { font-size: 2.8rem; color: var(--dark); line-height: 1.2; margin-bottom: 20px; }
+    .highlight { color: var(--primary); }
+    .hero-lead { font-size: 1.25rem; color: #444; margin-bottom: 30px; line-height: 1.6; }
+    .btn { padding: 15px 30px; border-radius: 5px; text-decoration: none; font-weight: bold; display: inline-block; transition: 0.3s; }
+    .btn-primary { background: var(--primary); color: white; margin-right: 15px; }
+    .btn-secondary { border: 2px solid var(--primary); color: var(--primary); }
+    .btn:hover { opacity: 0.8; transform: translateY(-2px); }
+    .trust-indicators { list-style: none; padding: 0; margin-top: 40px; display: flex; gap: 20px; font-size: 0.9rem; color: #666; }
+    
+    /* Kalkulátor doboz */
+    .hero-calculator { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); width: 350px; }
+    .result-box { margin-top: 20px; padding: 15px; background: #e9f5ff; border-radius: 8px; text-align: center; }
+    .result-box strong { display: block; font-size: 1.5rem; color: var(--primary); }
+    
+    @media (max-width: 768px) { .container { flex-direction: column; text-align: center; } .trust-indicators { flex-direction: column; } }
+</style>
